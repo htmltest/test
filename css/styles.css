@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {outline:none; box-sizing:border-box}
+
+html {min-width:375px}
+
+body {min-width:375px; margin:0; padding:0; font:16px/20px Roboto, Tahoma, Geneva, sans-serif; color:#000; background:#fff; -webkit-text-size-adjust:100%; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}
+
+img {border:none; max-width:100%; max-height:100%; height:auto}
+
+::-ms-clear {display:none}
+
+.btn {display:inline-block; margin:0; padding:0 60px; overflow:visible; outline:none; vertical-align:top; height:44px; text-decoration:none; background:#000; color:#fff; border:none; border-radius:22px; font:16px/44px Roboto, Tahoma, Geneva, sans-serif; letter-spacing:0; text-align:center; transition:all 0.2s; position:relative; -webkit-appearance:none; cursor:pointer; text-transform:uppercase}
+
+.container {max-width:1200px; margin:0 auto}
+.container::after {content:""; display:block; clear:both}
+
+@media screen and (max-width:1199px) {
+    .container {padding:0 15px}
+}
+
+.wrapper {width:100%; min-width:375px; position:relative; overflow:hidden}
+
+.welcome {background:#000 url(../images/welcome.jpg) no-repeat center; background-size:cover; height:654px}
+.welcome-content {width:480px; margin:0 0 0 60px; text-align:center; padding:204px 0 0 0}
+.welcome-title {font-size:33px; line-height:39px; text-transform:uppercase}
+.welcome-text {font-size:28px; line-height:33px; padding:9px 90px 0 90px}
+
+@media screen and (max-width:1440px) {
+    .welcome {height:555px}
+}
+
+@media screen and (max-width:1199px) {
+    .welcome {background-image:url(../images/welcome-mobile.jpg)}
+    .welcome-content {width:220px; margin:0 auto; padding:336px 0 0 0}
+    .welcome-title {font-size:24px; line-height:29px}
+    .welcome-text {font-size:16px; line-height:19px; padding:13px 0 0 0; text-transform:uppercase}
+}
+
+.features {margin:114px -45px}
+.features::after {content:""; display:block; clear:both}
+.features-item {float:left; width:33.33%; padding:0 45px}
+.features-item-inner {display:table}
+.features-item-icon {display:table-cell; vertical-align:middle; width:70px; line-height:0}
+.features-item-text {display:table-cell; vertical-align:middle; text-transform:uppercase; color:#a0a0a0}
+
+@media screen and (max-width:1440px) {
+    .features {margin:69px -45px 103px -45px}
+}
+
+@media screen and (max-width:1199px) {
+    .features {margin:15px 0 50px 0}
+    .features-item {float:none; width:auto; padding:32px 0 0 0}
+}
+
+.prefs-item {margin:30px 0}
+.prefs-item::after {content:""; display:block; clear:both}
+.prefs-item-text {float:right; width:50%; display:table}
+.prefs-item-text-inner {display:table-cell; vertical-align:middle; height:320px; padding:0 50px}
+.prefs-item-text-title {font-size:28px; line-height:34px; text-transform:uppercase}
+.prefs-item-text-descr {padding:16px 0 0 0}
+.prefs-item-photo {float:left; width:50%; line-height:0}
+.prefs-item:nth-child(even) .prefs-item-text {float:left}
+.prefs-item:nth-child(even) .prefs-item-photo {float:right}
+
+@media screen and (max-width:1199px) {
+    .prefs-item-text {float:none; width:auto; display:block; text-align:center}
+    .prefs-item-text-inner {display:block; height:auto; padding:0}
+    .prefs-item-text-title {font-size:24px; line-height:29px}
+    .prefs-item-text-descr {padding:16px 0 0 0}
+    .prefs-item-photo {float:none; width:auto; padding:25px 0 0 0; text-align:center}
+    .prefs-item:nth-child(even) .prefs-item-text {float:none}
+    .prefs-item:nth-child(even) .prefs-item-photo {float:none}
+}
+
+.how {text-align:center; margin:103px 0 0 0}
+.how-title {font-size:33px; line-height:39px; text-transform:uppercase}
+.how-steps {margin:61px -25px 0 -25px}
+.how-steps::after {content:""; display:block; clear:both}
+.how-step {float:left; width:33.33%; padding:0 55px}
+.how-step-number {width:57px; height:57px; border:3px solid #a0a0a0; border-radius:50%; font-size:28px; line-height:51px; margin:0 auto}
+.how-step-text {padding:5px 0 0 0}
+.how-vip {font-weight:bold; padding:56px 0 0 0}
+.how-btn {padding:44px 0 0 0}
+
+@media screen and (max-width:1199px) {
+    .how {margin:24px 0 0 0}
+    .how-title {font-size:24px; line-height:29px}
+    .how-steps {margin:0}
+    .how-step {float:none; width:auto; padding:37px 50px 0 50px}
+    .how-step:first-child {padding-top:29px}
+    .how-vip {padding:32px 50px 0 50px}
+}
+
+.reviews {text-align:center; margin:117px 0 0 0}
+.reviews-title {font-size:33px; line-height:39px; text-transform:uppercase}
+
+@media screen and (max-width:1199px) {
+    .reviews {margin:43px 0 0 0}
+    .reviews-title {font-size:24px; line-height:29px}
+}
+
+.reviews-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:79px -14px 67px -14px; white-space:nowrap}
+.reviews-list .slick-list {overflow:visible}
+.reviews-list .slick-slide {opacity:0.5; transition:opacity 0.2s}
+.reviews-list .slick-active {opacity:1}
+.reviews-item {display:inline-block; vertical-align:top; width:33.33%; padding:0 14px; white-space:normal}
+.reviews-item-name {font-size:28px; line-height:33px; letter-spacing:0; text-align:center; padding:0 20px; text-transform:uppercase}
+.reviews-item-text {font-size:16px; line-height:20px; letter-spacing:0; text-align:center; padding:0 20px; margin:23px 0 0 0}
+.reviews-item-photo {padding:19px 0 0 0}
+.reviews-list .slick-prev,
+.reviews-list .slick-next {display:block; position:absolute; z-index:2; bottom:130px; width:33px; height:53px; border:none; border-radius:0; margin:0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent}
+.reviews-list .slick-prev {left:-90px; background:url(../images/arrow-prev.svg) no-repeat}
+.reviews-list .slick-next {right:-90px; background:url(../images/arrow-next.svg) no-repeat}
+
+@media screen and (max-width:1440px) {
+    .reviews-list .slick-prev {left:-56px}
+    .reviews-list .slick-next {right:-56px}
+}
+
+@media screen and (max-width:1199px) {
+    .reviews-list {width:375px; margin:35px auto 75px auto; left:-15px}
+    .reviews-list .slick-slide {opacity:0}
+    .reviews-list .slick-active {opacity:1}
+    .reviews-item-name {font-size:24px; line-height:29px; padding:0}
+    .reviews-item-text {margin:8px 0 0 0; padding:0}
+    .reviews-list .slick-prev,
+    .reviews-list .slick-next {width:20px; height:30px}
+    .reviews-list .slick-prev {left:7px; background:url(../images/arrow-prev-mobile.svg) no-repeat}
+    .reviews-list .slick-next {right:7px; background:url(../images/arrow-next-mobile.svg) no-repeat}
+}
+
+.community {padding:71px 0 48px 0; text-align:center; background:#ececeb}
+.community-title {font-size:33px; line-height:39px; text-transform:uppercase}
+.community-list {font-size:0; line-height:0; letter-spacing:-1px; position:relative; margin:50px -120px 0 -120px; white-space:nowrap; overflow:hidden}
+.community-list.slick-initialized {overflow:visible}
+.community-item {display:inline-block; vertical-align:top; width:25%; padding:0 15px; white-space:normal}
+.community-item-photo img {margin:0 auto}
+.community-list .slick-prev,
+.community-list .slick-next {display:block; position:absolute; z-index:2; top:50%; width:33px; height:53px; border:none; border-radius:0; margin:-27px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:transparent}
+.community-list .slick-prev {left:-135px; background:url(../images/arrow-prev.svg) no-repeat}
+.community-list .slick-next {right:-135px; background:url(../images/arrow-next.svg) no-repeat}
+.community-btn {padding:51px 0 0 0}
+
+@media screen and (max-width:1440px) {
+    .community-list .slick-prev {left:55px}
+    .community-list .slick-next {right:55px}
+}
+
+@media screen and (max-width:1199px) {
+    .community {padding:41px 0 39px 0}
+    .community-title {font-size:24px; line-height:29px}
+    .community-list {margin:47px -8px 0 -8px}
+    .community-item {width:50%; padding:0 8px}
+    .community-list .slick-prev,
+    .community-list .slick-next {width:20px; height:30px}
+    .community-list .slick-prev {left:-4px; background:url(../images/arrow-prev-mobile.svg) no-repeat}
+    .community-list .slick-next {right:-4px; background:url(../images/arrow-next-mobile.svg) no-repeat}
+    .community-btn {padding:33px 0 0 0}
+}
